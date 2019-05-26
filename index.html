@@ -19,8 +19,7 @@
 				<header>
 					<span class="image avatar"><img src="images/maria.jpg" alt="" /></span>
 					<h1 id="logo"><a href="#">Maria Velasquez</a></h1>
-					<p>Soy embasadora de salud y herbalife. <br />Juntos podemos!
-					</p>
+					<p>Soy embasadora de salud y herbalife. <br />Juntos podemos!</p>
 				</header>
 				<nav id="nav">
 					<ul>
@@ -58,7 +57,7 @@
 									<header class="major">
 										<h2>Yari's Nutrición <img class="scale" src="images/herbalife.eps" /> </h2>
 										<p>Bienvenido al club.</br> ¡Esperamos que se una y comience su viaje de salud con nosotros!</p>
-
+									</header>
 									<p>El club Yari's Nutrición se fundó en 2019 con la idea de que llevar una vida saludable puede llevarlo a tener éxito y un mejor bienestar. Por lo tanto, el club abrió aquí en Bakersfield, reuniendo a los individuos y creando una comunidad consciente de la salud. Nuestra pasión es ayudar a otros a alcanzar sus objetivos nutricionales y personales, ¡lo invitamos a ser parte de nuestra red para que podamos crecer juntos!</p>
 
 									<div class="col-12-medium">
@@ -198,33 +197,36 @@
 									<div class="col-3 col-6-medium col-12-xsmall">
 										<ul class="actions stacked">
 											<li><a href="https://yarisnutritiom.goherbalife.com//wellness/Home/Index/es-US/#/WpTemplateSingleLineText" class="button primary">Quiero una Evaluación </a></li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</section>
 
 
 						<!-- Six -->
-							<section id="six">
-								<div class="container">
-									<h3>Contáctame</h3>
-									<p>Preguntas, dudas o comentarios, no dude en contactarme.</p>
-									<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSffNcWRbZUyztm3aZ7xKNHiq0WxygY53mO-R2VuMfE0ewwSjg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="entry.1691387116" id="entry.1691387116" placeholder="Nombre" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="entry.2031095529" id="entry.2031095529" placeholder="Email" /></div>
-											<div class="col-12"><input type="text" name="entry.1610811098" id="entry.1610811098" placeholder="Tema" /></div>
-											<div class="col-12"><textarea name="entry.425376367" id="entry.425376367" placeholder="Mensaje" rows="6"></textarea></div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" class="primary" value="Enviar Mensaje" /></li>
-													<li><input type="reset" value="Restablecer" /></li>
-												</ul>
-											</div>
+						<section id="six">
+							<div class="container">
+								<h3>Contáctame</h3>
+								<p>Preguntas, dudas o comentarios, no dude en contactarme.</p>
+								<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSffNcWRbZUyztm3aZ7xKNHiq0WxygY53mO-R2VuMfE0ewwSjg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+									<div class="row gtr-uniform">
+										<div class="col-6 col-12-xsmall"><input type="text" name="entry.1691387116" id="entry.1691387116" placeholder="Nombre" required/></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="entry.998729937" id="entry.998729937" placeholder="Tel: 661-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/></div>
+										<div class="col-12"><input type="email" name="entry.2031095529" id="entry.2031095529" placeholder="Email" required/></div>
+										<div class="col-12"><input type="text" name="entry.1610811098" id="entry.1610811098" placeholder="Tema" required/></div>
+										<div class="col-12"><textarea name="entry.425376367" id="entry.425376367" placeholder="Mensaje" rows="6" required></textarea></div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" class="primary" value="Enviar Mensaje" /></li>
+												<li><input type="reset" value="Restablecer" /></li>
+											</ul>
 										</div>
-									</form>
-									<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-								</div>
-							</section>
+									</div>
+								</form>
+								<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+							</div>
+						</section>
 
 						<!-- Five -->
 						<!--
@@ -587,10 +589,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</script>
 			<script language="JavaScript">
 				var frmvalidator  = new Validator("contactform");
-				frmvalidator.addValidation("name","req","Please provide your name");
-				frmvalidator.addValidation("email","req","Please provide your email");
-				frmvalidator.addValidation("email","email",
-						"Please enter a valid email address");
+				frmvalidator.addValidation("entry.1691387116","req","Por favor proporcione su nombre");
+				frmvalidator.addValidation("entry.2031095529","req","Por favor proporcione su correo electrónico");
+				frmvalidator.addValidation("entry.2031095529","email",
+						"Por favor, introduce una dirección de correo electrónico válida");
+				frmvalidator.addValidation("entry.1610811098", "req", "Por favor indique el tema")
+				frmvalidator.addValidation("entry.998729937","req", "Por favor proporcione un número de contacto");
+				frmvalidator.addValidation("entry.425376367","req", "Mensaje requerido")
 			</script>
 
 	</body>
