@@ -12,31 +12,6 @@
     <link rel="stylesheet" href="assets/css/main.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
           integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script type="text/javascript">var submitted = false;</script>
-    <script type="text/javascript">
-        $('#gform').on('submit', function (e) {
-            $('#gform *').fadeOut(2000);
-            $('#gform').prepend('Su envío ha sido procesado. Recibirá una respuesta dentro de las 72 horas ...');
-        });
-    </script>
-    <script language="JavaScript">
-        var frmvalidator = new Validator("contactform");
-        frmvalidator.addValidation("entry.2005620554", "req", "Por favor proporcione su nombre");
-        frmvalidator.addValidation("entry.1045781291", "req", "Por favor proporcione su correo electrónico");
-        frmvalidator.addValidation("entry.1045781291", "email",
-            "Por favor, introduce una dirección de correo electrónico válida");
-        frmvalidator.addValidation("entry.5004752", "req", "Por favor indique el tema")
-        frmvalidator.addValidation("entry.1166974658", "req", "Por favor proporcione un número de contacto");
-        frmvalidator.addValidation("entry.839337160", "req", "Mensaje requerido")
-    </script>
 </head>
 <body class="is-preload">
 
@@ -624,6 +599,32 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
             </ul>
         </div>
     </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">var submitted = false;</script>
+    <script type="text/javascript">
+        $('#gform').on('submit', function (e) {
+            $('#gform *').fadeOut(2000);
+            $('#gform').prepend('Su envío ha sido procesado. Recibirá una respuesta dentro de las 72 horas ...');
+        });
+    </script>
+    <script language="JavaScript">
+        var frmvalidator = new Validator("contactform");
+        frmvalidator.addValidation("entry.2005620554", "req", "Por favor proporcione su nombre");
+        frmvalidator.addValidation("entry.1045781291", "req", "Por favor proporcione su correo electrónico");
+        frmvalidator.addValidation("entry.1045781291", "email",
+            "Por favor, introduce una dirección de correo electrónico válida");
+        frmvalidator.addValidation("entry.5004752", "req", "Por favor indique el tema")
+        frmvalidator.addValidation("entry.1166974658", "req", "Por favor proporcione un número de contacto");
+        frmvalidator.addValidation("entry.839337160", "req", "Mensaje requerido")
+    </script>
 
 </div>
 </body>
